@@ -5,6 +5,7 @@ In this project we were tasked with creating a web application that allows us to
 ### Setup the application
 
 `$git clone https://github.com/galbalazs87/myreads.git`
+
 `$cd myreads`
 
 ### Install the app
