@@ -20,16 +20,18 @@ class Book extends Component {
                             })`}}>                        
                     </div>
                     <div className="book-shelf-changer">
-                        <select 
+                    <select 
                             onChange={e => onShelfChange(book, e.target.value)}
-                            value={book.shelf ? book.shelf : ''}>
-                            <option value="none" disabled>Move to...</option>
-                            <option value="currentlyReading">Currently Reading</option>
-                            <option value="wantToRead">Want to Read</option>
-                            <option value="read">Read</option>
-                            <option value="none">None</option>
-                        </select>
-                    </div>
+                            value={book.shelf ? book.shelf : 'none'}>
+                      <option value="no" disabled>
+                        Move to...
+                      </option>
+                      <option value="currentlyReading">Currently Reading</option>
+                      <option value="wantToRead">Want to Read</option>
+                      <option value="read">Read</option>
+                      <option value="none">None</option>
+                    </select>
+                  </div>
                 </div>
                 <div className="book-title">{book.title ? book.title : null}</div>
                 <div className="book-authors">{book.authors ? book.authors.join(',') : null}</div>
